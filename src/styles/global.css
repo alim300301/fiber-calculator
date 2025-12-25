@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-900 text-gray-200 min-h-screen;
+}
+
+.loader {
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    background: #1f2937;
+    border-radius: 8px;
+}
+
+footer span:hover {
+    text-shadow: 0 0 8px currentColor;
+}
